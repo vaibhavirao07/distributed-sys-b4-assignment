@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0D6766;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    width: 200px;
+    float: left;
+    background-color: #333;
+    height: 100vh;
+    color: white;
+    padding: 15px;
+    transition: width 0.3s; /* Smooth transition for width change */
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+footer {
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h2 {
+    color: #0D6766;
+}
+
+.course-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-details p {
+    line-height: 1.6;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.links-list li {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #0D6766;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Allow height to adjust */
+        position: relative; /* Change positioning */
+    }
+
+    nav a {
+        float: left; /* Stack nav links horizontally */
+    }
+
+    main {
+        margin-left: 0; /* Remove left margin */
+        padding: 15px; /* Adjust padding */
+    }
+
+    footer {
+        position: relative; /* Allow footer to move with content */
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        display: none; /* Hide the sidebar on very small screens */
+    }
+
+    main {
+        padding: 10px; /* Adjust padding for main content */
+    }
+
+    header, footer {
+        padding: 15px; /* Increase padding for header and footer */
+    }
+}
